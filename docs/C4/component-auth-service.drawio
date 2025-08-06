@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
+  <diagram name="C4 - Component Diagram - Auth Service" id="component-auth-service">
+    <mxGraphModel dx="1418" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Auth Service" style="swimlane;startSize=30;fillColor=#DAE8FC;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="100" y="80" width="620" height="310" as="geometry">
+            <mxRectangle x="100" y="80" width="120" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3" value="AuthController" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#FFF2CC;" parent="2" vertex="1">
+          <mxGeometry x="40" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="AuthService" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#E1D5E7;" parent="2" vertex="1">
+          <mxGeometry x="220" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="UserRepository" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#F8CECC;" parent="2" vertex="1">
+          <mxGeometry x="400" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="JWT Generator (Lib)" style="shape=cylinder;whiteSpace=wrap;html=1;fillColor=#D5E8D4;" parent="2" vertex="1">
+          <mxGeometry x="210" y="230" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="User Database" style="shape=database;whiteSpace=wrap;html=1;fillColor=#DAE8FC;" parent="1" vertex="1">
+          <mxGeometry x="320" y="420" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="3" target="4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="4" target="5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;" parent="1" source="4" target="6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="5" target="7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
